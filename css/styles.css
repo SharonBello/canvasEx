@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    background-color: #f1f8ff;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.canvas-container {
+    width: 60vw;
+    height: 80vh;
+    border: 0.7em solid black;
+}
+
+.controls > * {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.controls{
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    line-height: 2em;    
+    gap: 1em;
+    padding:20px;
+    border: 1px solid black;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px lightskyblue;
+}
+
+#shape-select, label {
+font-size: 1.2em;
+}
+
+input {
+    width:50px;
+    height:50px;
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+}
+
+input.penWidth{
+    width:100px;
+}
+
+.btn {
+    background: #4267b2;
+    border: 1px solid #4267b2;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0 5px;
+    user-select: none;
+    white-space: nowrap;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 3px;
+    max-height: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+    .canvas-container {
+      width: 80vw;
+    }
+    
+  }
